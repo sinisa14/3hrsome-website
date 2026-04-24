@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-brand-orange: #FF4500;
+  --color-brand-orange-hover: #e63e00;
+  --color-brand-black: #000000;
+  --color-brand-blue: #2E2D5F;
+  --color-brand-white: #FFFFFF;
+  --color-brand-gray: #F5F5F5;
+  --color-brand-dark: #1A1A2E;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Heebo', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-brand-black);
+  background: var(--color-brand-white);
+}

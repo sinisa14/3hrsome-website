@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://3hrsome.com/sitemap.xml

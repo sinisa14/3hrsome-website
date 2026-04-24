@@ -17,9 +17,36 @@ const heebo = Heebo({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://3hrsome.com"),
   title: "3HRsome | Pre-Vetted Remote Talent for US Startups",
   description:
     "We deliver a shortlist of pre-vetted Eastern European professionals in 7 days. You pay nothing until you hire. Every placement backed by a 3-month replacement guarantee.",
+  alternates: {
+    canonical: "https://3hrsome.com",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  keywords: [
+    "remote hiring",
+    "Eastern Europe talent",
+    "startup recruitment",
+    "hire remote developers",
+    "pre-vetted candidates",
+    "US startup hiring",
+    "Eastern European developers",
+    "remote recruitment agency",
+    "hire engineers Eastern Europe",
+    "cost-effective hiring",
+  ],
   openGraph: {
     title: "3HRsome | Pre-Vetted Remote Talent for US Startups",
     description:

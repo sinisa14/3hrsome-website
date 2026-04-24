@@ -41,14 +41,7 @@ export default function Footer() {
             >
               Talent Hub
             </a>
-            <a
-              href="https://app.dover.com/dover/careers/858f3e07-2623-40cc-a561-dafc4c291312"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-white/70 font-medium hover:text-brand-orange transition-colors"
-            >
-              For Job Seekers
-            </a>
+
           </div>
 
           <div className="flex flex-wrap justify-center md:justify-start gap-5 mb-4">

@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -37,7 +36,7 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-[0_1px_8px_rgba(0,0,0,0.08)]">
       <div className="mx-auto max-w-[1200px] px-6 h-[72px] flex items-center justify-between">
         {/* Logo */}
-        <Link href="#" className="block">
+        <a href="#top" className="block" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
           <svg
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +90,7 @@ export default function Navbar() {
               />
             </g>
           </svg>
-        </Link>
+        </a>
 
         {/* Desktop Links */}
         <div className="hidden md:flex items-center gap-7">

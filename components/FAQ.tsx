@@ -1,7 +1,3 @@
-"use client";
-
-import { useState } from "react";
-
 const faqs = [
   {
     q: "What if the hire doesn't work out?",
@@ -30,8 +26,6 @@ const faqs = [
 ];
 
 export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-
   return (
     <section id="faq" className="py-20 px-6 bg-white">
       <div className="max-w-[760px] mx-auto">
@@ -39,38 +33,27 @@ export default function FAQ() {
           Common Questions
         </h2>
 
-        <div>
+        <div className="faq-accordion">
           {faqs.map((faq, i) => (
-            <div
+            <details
               key={i}
-              className={`border-b border-[#e0e0e0] ${
+              className={`border-b border-[#e0e0e0] group ${
                 i === 0 ? "border-t" : ""
               }`}
             >
-              <button
-                className="w-full py-5 text-left flex justify-between items-center gap-4"
-                onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                aria-expanded={openIndex === i}
-              >
-                <span
-                  className={`text-base font-bold transition-colors ${
-                    openIndex === i
-                      ? "text-brand-orange"
-                      : "text-brand-blue"
-                  }`}
-                >
-                  {faq.q}
+              <summary className="py-5 text-base font-bold text-brand-blue cursor-pointer list-none flex justify-between items-center gap-4 hover:text-brand-orange transition-colors [&::-webkit-details-marker]:hidden group-open:text-brand-orange">
+                <span>{faq.q}</span>
+                <span className="text-[22px] font-semibold text-brand-orange flex-shrink-0 group-open:hidden">
+                  +
                 </span>
-                <span className="text-[22px] font-semibold text-brand-orange flex-shrink-0 transition-transform">
-                  {openIndex === i ? "−" : "+"}
+                <span className="text-[22px] font-semibold text-brand-orange flex-shrink-0 hidden group-open:inline">
+                  −
                 </span>
-              </button>
-              {openIndex === i && (
-                <p className="pb-5 text-[15px] text-[#555] leading-relaxed">
-                  {faq.a}
-                </p>
-              )}
-            </div>
+              </summary>
+              <p className="pb-5 text-[15px] text-[#555] leading-relaxed">
+                {faq.a}
+              </p>
+            </details>
           ))}
         </div>
       </div>

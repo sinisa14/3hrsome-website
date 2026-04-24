@@ -8,10 +8,13 @@ import Founder from "@/components/Founder";
 import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
+import StructuredData from "@/components/StructuredData";
+import CookieBanner from "@/components/CookieBanner";
 
 export default function Home() {
   return (
     <>
+      <StructuredData />
       <Navbar />
       <Hero />
       <Problem />
@@ -22,6 +25,7 @@ export default function Home() {
       <FAQ />
       <FinalCTA />
       <Footer />
+      <CookieBanner />
     </>
   );
 }

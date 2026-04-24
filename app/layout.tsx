@@ -17,11 +17,11 @@ const heebo = Heebo({
 });
 
 export const metadata: Metadata = {
-  title: "3HRsome — Pre-Vetted Remote Talent for US Startups",
+  title: "3HRsome | Pre-Vetted Remote Talent for US Startups",
   description:
     "We deliver a shortlist of pre-vetted Eastern European professionals in 7 days. You pay nothing until you hire. Every placement backed by a 3-month replacement guarantee.",
   openGraph: {
-    title: "3HRsome — Pre-Vetted Remote Talent for US Startups",
+    title: "3HRsome | Pre-Vetted Remote Talent for US Startups",
     description:
       "Stop paying $180K for a role that costs $75K. Get a shortlist of pre-vetted Eastern European professionals in 7 days. 3-month replacement guarantee.",
     url: "https://3hrsome.com",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
         url: "https://3hrsome.com/og-image.png",
         width: 1200,
         height: 630,
-        alt: "3HRsome — Pre-Vetted Remote Talent for US Startups",
+        alt: "3HRsome | Pre-Vetted Remote Talent for US Startups",
       },
     ],
     locale: "en_US",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "3HRsome — Pre-Vetted Remote Talent for US Startups",
+    title: "3HRsome | Pre-Vetted Remote Talent for US Startups",
     description:
       "Stop paying $180K for a role that costs $75K. Get a shortlist in 7 days. 3-month replacement guarantee.",
     images: ["https://3hrsome.com/og-image.png"],
